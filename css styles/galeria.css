@@ -1,0 +1,207 @@
+:root{
+    font-size: 40px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+/*Fondo de la página y fuente general*/
+body{
+    background-color: #000000;
+    font-family: 'Oswald', sans-serif;
+    color: #75706C;
+    overflow-x: hidden;
+    
+}
+
+a{
+    text-decoration: none;
+
+}
+li{
+    list-style: none;
+}
+/*Navigation bar*/
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background: linear-gradient(to right,#212121,#75706C,#EFEFEF);
+    width: 100%;
+    position: fixed;
+    z-index: 99995;
+}
+.navigation{
+    padding-bottom: 14px;
+}
+.logo>img{
+    width: 40px;
+}
+.logo>h2{
+    font-family: 'Metal Mania', cursive;
+    font-size: 1rem;
+    color: #000000;
+}
+.logo>h2:hover{
+    color: #EFEFEF;
+    transition: 0.4s;
+}
+.nav-container>.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo>img{
+    width: 40px;
+}
+.nav-container>.navigation>.menu{
+    display: flex;
+}
+
+.nav-container>.navigation>.menu>.menu-item>a{
+    margin-left: 30px;
+    font-family: 'Metal Mania', cursive;
+    font-size: 0.7rem;
+    color: #000000;
+}
+.nav-container>.navigation>.menu>.menu-item :hover{
+    background:#75706C;
+    transition: 0.4s;
+    color: #EFEFEF;
+    border-radius: 8%;
+}
+
+/*Titulo principal*/
+
+.header-home-container>.home-title{
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Metal Mania', cursive;
+    text-shadow: 0 2px white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+/*galeria de discos*/
+main>section>h2{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+
+}
+.galeria{
+    display:flex;
+    
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
+
+
+}
+
+.galeria>div>figcaption{
+    font-size: 0.5rem ;
+    text-align:left;
+    margin-bottom: 20px;
+
+}
+
+
+.galeria>div>a :hover{
+    transition: 1s ease-in-out;
+    transform: scale(1.08);
+}
+.galeria>div>a{
+   
+    margin-right: 50px;
+    
+    
+
+}
+
+/*Titulo de pie de pagina */
+
+/*Footer y enlaces externos*/
+
+.grid-container{
+    background: linear-gradient(to left,#212121,#75706C,#EFEFEF);
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    
+}
+
+.title-and-image{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.title-and-image>img{
+    width: 40px;
+
+    
+}
+.title-and-image>h2{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: 'Metal Mania', cursive;
+    text-shadow: 0 2px black;
+    text-align: left;
+    color: #75706C;
+}
+.grid-container>.title-and-image>p{
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #000000;
+
+}
+
+.redes>.titulo-redes>h2{
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Metal Mania', cursive;
+    text-shadow: 0 2px black;
+    text-align: center;
+    color: #75706C;
+
+}
+
+
+.iconos>.menu-redes>li>a>img{
+    width: 40px;
+    margin-left: 20px;
+    background: linear-gradient(to right,#212121,#75706C,#EFEFEF);
+    border-radius: 10%;
+
+}
+.iconos>.menu-redes>li>a>img:hover{
+    background:#CA1116;
+    transition: 0.9s; 
+    
+}
+.redes>.iconos>.menu-redes{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .grid-container{
+        grid-template-columns: 2fr;
+
+    }
+
+    
+}
+
